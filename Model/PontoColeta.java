@@ -1,6 +1,8 @@
 package classesProjetos;
 
-public class PontoColeta {
+public class PontoColeta extends Registro{
+	private String nome;
+	private String cnpj;
 	private String horaFuncionamento;
 	private Endereco endereco;
 	private Contato contato;
@@ -11,6 +13,22 @@ public class PontoColeta {
 		this.endereco = endereco;
 		this.contato = contato;
 		this.reviews = reviews;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
 	}
 
 	public String getHoraFuncionamento() {
