@@ -1,6 +1,6 @@
 package classesProjetos;
 
-public class Usuario {
+public class Usuario extends Registro{
     private String nomeCompleto;
     private String senha;
     private String cpf;
