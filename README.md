@@ -8,11 +8,11 @@ O Reconecta é uma aplicação web-server desenvolvida dedicada a estabelecer um
 
 ## Estrutura do Repositório
 
-A estrutura do repositório é organizada da seguinte forma:
-As classes em Java com Programação Orientada à Objetos
-Classes -> DAO, Mediator, Model, Utils
+- A estrutura do repositório é organizada da seguinte forma:
+- As classes em Java com Programação Orientada à Objetos
+- Classes -> DAO, Mediator, Model, Utils
 
-As pastas do servidor/website
-Reconecta/Reconecta/build/classes/classesProjetos  -> As classes Java...
-Reconecta/Reconecta/src/main/java/classesProjetos  -> As classes Java...
-Reconecta/Reconecta/src/webapp/ -> CSS, Imagens e HTMLs do servidor
+## As pastas do servidor/website
+- Reconecta/Reconecta/build/classes/classesProjetos  -> As classes Java...
+- Reconecta/Reconecta/src/main/java/classesProjetos  -> As classes Java...
+- Reconecta/Reconecta/src/webapp/ -> CSS, Imagens e HTMLs do servidor
