@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Reconecta - Tela Inicial</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Candal">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script>
+    	let moedas = 70;
+        // Função para recuperar a variável do localStorage e exibir
+        function mostrarMoedas() {
+            let moedas = localStorage.getItem('moedas');
+            document.getElementById('moedas').innerText = moedas;
+        }
+
+        // Chama a função para mostrar as moedas ao carregar a página
+        window.onload = mostrarMoedas;
+    </script>
+</head>
+<body>
+	<div class="top-bar">
+       <a href="index.html" class="logo">
+       	<img id="miniLogo" src="images/miniLogo.png" alt="Mini Logo" class="logo">
+       </a>
+       <nav>
+           <ul>
+               <li><a href="recoleta.html">Recoleta</a></li>
+               <li><a href="descarte.html">Descarte consciente</a></li>
+               <li><a href="onde.html">Onde descartar</a></li>
+           </ul>
+       </nav>    
+		<div class="greeting" onmouseover="mostrarPopup()" onmouseout="esconderPopup()">
+	    <a href="usuario.html" style="color: white">Olá, Usuário</a>
+	    <div class="popup" id="popupMoeda">
+	        <span style="font-size: 12px;" class="popup-close" onclick="esconderPopup()">&times;</span>
+	        <a href="recoin.html" style="color: #33A721;">Moeda: <span id="moedas">0</span> Recoins</a>
+	    </div>
+		</div>
+		
+		<script>
+		moedas = mostrarMoedas();
+	    function mostrarPopup() {
+	        document.getElementById('popupMoeda').style.display = 'block';
+	    }
+	
+	    function esconderPopup() {
+	        document.getElementById('popupMoeda').style.display = 'none';
+	    }
+	</script>
+    </div>
+    <div class="bigLogo">
+        <img style="width:400px" src="images/Logo.png" alt="Logo">
+    </div>
+    <div class="textoTitulo">
+        <p class="p1">SOBRE NÓS</p>
+    </div>
+    <div class="content" style="margin-bottom:50px; text-align:center; font-size: 16px">
+        <p>Somos uma empresa de serviços dedicada a estabelecer uma conexão eficiente entre empresas, marcas e<br>
+        consumidores. De maneira inovadora, oferecemos soluções que resolvem problemas com praticidade, intuição<br>
+        e autenticidade. Nosso foco está em atender as necessidades de todos os usuários, assegurando uma experiência<br>
+        completa e satisfatória. Entre nossas parcerias estratégicas, destacamos a colaboração com a Brencorp. Trabalhamos<br>
+        em conjunto para desenvolver soluções sustentáveis, alinhando nossos objetivos à responsabilidade ambiental e ao<br>
+        desenvolvimento sustentável. Para obter mais informações sobre nossos serviços e clientes, convidamos você a<br>
+        conhecer nossa plataforma, a Reconecta.</p>
+    </div>
+    <div class="textoTitulo">
+        <p class="p1" style="color:#104E06">A Brencorp</p>
+    </div>
+    <div class="textoTitulo">
+    	<img class="info" style="width:300px; margin-left: 100px; margin-bottom: 40px" src="images/brencorp.png" alt="Brencorp"> 
+        <p class="descricao" style="margin-left: 200px; font-size:16px; margin-bottom: 100px">
+        A Brencorp é uma empresa de consultoria ambiental com uma sólida<br>
+        trajetória, comprometida em oferecer soluções inovadoras e<br>
+        sustentáveis para os desafios enfrentados pelo meio ambiente.<br>
+        Fundada em 1991, a Brencorp vem utilizando sua expertise e<br>
+        conhecimento para auxiliar clientes em diversas indústrias a alcançar<br>
+        práticas mais responsáveis e ecoeficientes.</p>
+     </div>
+     <p class="p1" style="color:#104E06; margin-top: 80px; margin-bottom: 70px;">Mais Informações</p>
+     <div class="container-botoes">
+	     <div class="botao-estilizado">
+	     	<img src="images/caminhao.png" style="width:80px; margin-left: 15px " alt="Caminhao">
+		    <p class="p1" style="font-size: 26px; color: #104E06">Recoleta</p>
+		    <a href="recoleta.html" class="botao-sabermais">
+		    <button class="botao-sabermais">
+			    <p style="font-size: 14px" >Saiba Mais</p>
+			</button>
+			</a>
+			<p style="color: #F4F2F2; margin-left: 15px"><p>
+		</div>
+		<div class="botao-estilizado">
+	     	<img src="images/dinheiro.png" style="width:70px; margin-left: 25px " alt="Dinheiro"> 
+		    <p class="p1" style="font-size: 26px; color: #104E06">Recoin</p>
+		    <a href="recoin.html" class="botao-sabermais">
+		    <button class="botao-sabermais">
+			    <p style="font-size: 14px" >Saiba Mais</p>
+			</button>
+			</a>
+			<p style="color: #F4F2F2; margin-left: 15px"><p>
+		</div>
+		<div class="botao-estilizado">
+	     	<img src="images/pc.png" style="width:80px; margin-left: 15px " alt="PC"> 
+		    <p class="p1" style="font-size: 26px; color: #104E06">Descarte Consciente</p>
+		    <a href="descarte.html" class="botao-sabermais">
+		    <button class="botao-sabermais">
+			    <p style= "font-size: 14px" >Saiba Mais</p>
+			</button>
+			</a>
+			<p style="color: #F4F2F2; margin-left: 8px">a<p>
+		</div>
+	</div>
+	
+	<div class="bottom-bar">
+    	<p class="p1" style="font-size: 20px; margin-top: 20px; margin-left: 15px" >Contato</p>
+    </div>
+    <div class="bottom-bar" >
+    	<img src="images/email.png" style= "width:20px; height: 20px; margin-left: 50px; margin-right: 10px;" alt="Email"> 
+    	<p style="font-size: 14px; margin-top: 0px;" >contato@reconecta.com.br</p>
+    	<img style= "width:20px; height: 20px; margin-left: 50px;  margin-right: 10px;" src="images/telefone.png"  alt="Telefone"> 
+    	<p style="margin-top: 0px; font-size: 14px" >+55 81 99987-2721</p>
+    	
+    	<img src="images/LogoClara.png" alt="Logo" style="width:180px; height:40px; margin-left: 250px;">
+    	<img class="info" style="height:40px; margin-left: 250px" src="images/brencorp.png" alt="Brencorp"> 
+    </div>
+    <div class="bottom-bar">
+    	<p></p>
+    </div>
+</body>
+</html>

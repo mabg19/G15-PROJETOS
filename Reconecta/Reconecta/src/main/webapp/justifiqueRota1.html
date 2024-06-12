@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Reconecta - Justificativa</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Candal">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script>
+        // Função para recuperar a variável do localStorage e exibir
+        function mostrarMoedas() {
+            let moedas = localStorage.getItem('moedas');
+            document.getElementById('moedas').innerText = moedas;
+        }
+
+        // Chama a função para mostrar as moedas ao carregar a página
+        window.onload = mostrarMoedas;
+    </script>
+</head>
+<body>
+	<div class="top-bar">
+       <a href="index.html" class="logo">
+       	<img id="miniLogo" src="images/miniLogo.png" alt="Mini Logo" class="logo">
+       </a>
+       <nav>
+           <ul>
+               <li><a href="recoleta.html">Recoleta</a></li>
+               <li><a href="descarte.html">Descarte consciente</a></li>
+               <li><a href="onde.html">Onde descartar</a></li>
+           </ul>
+       </nav>    
+		<div class="greeting" onmouseover="mostrarPopup()" onmouseout="esconderPopup()">
+	    <a href="usuario.html" style="color: white">Olá, Usuário</a>
+	    <div class="popup" id="popupMoeda">
+	        <span style="font-size: 12px;" class="popup-close" onclick="esconderPopup()">&times;</span>
+	        <a href="recoin.html" style="color: #33A721;">Moeda: <span id="moedas">0</span> Recoins</a>
+	    </div>
+		</div>
+		
+		<script>
+	    function mostrarPopup() {
+	        document.getElementById('popupMoeda').style.display = 'block';
+	    }
+	
+	    function esconderPopup() {
+	        document.getElementById('popupMoeda').style.display = 'none';
+	    }
+	</script>
+    </div>
+    
+    
+    <div style="margin-top: 100px; display: flex; flex-direction: row">
+    		<a href="recoleta.html" style="font-size:15px; margin: 15px; color: black;" > <- Voltar</a>
+   	</div>    
+    
+    <div class="descricao" >
+    	<div class="container-botoes">
+	       	<p style="text-align: center; font-size: 24px"> Justifique o motivo pelo qual você necessita que o Recoleta<br>passe na sua casa!</p>
+	        <textarea placeholder="    Digite aqui..." class="botao-preencher" style="height: 300px; width: 800px;"></textarea>
+	        <a class="botao-sabermais" href="justifiqueRota1.html" style="font-size: 16px; margin-left: 26px;">Enviar</a>
+        </div>
+    </div>
+    
+    
+     <div class="bottom-bar">
+    	<p class="p1" style="font-size: 20px; margin-top: 20px; margin-left: 15px" >Contato</p>
+    </div>
+    <div class="bottom-bar" >
+    	<img src="images/email.png" style= "width:20px; height: 20px; margin-left: 50px; margin-right: 10px;" alt="Email"> 
+    	<p style="font-size: 14px; margin-top: 0px;" >contato@reconecta.com.br</p>
+    	<img style= "width:20px; height: 20px; margin-left: 50px;  margin-right: 10px;" src="images/telefone.png"  alt="Telefone"> 
+    	<p style="margin-top: 0px; font-size: 14px" >+55 81 99987-2721</p>
+    	
+    	<img src="images/LogoClara.png" alt="Logo" style="width:180px; height:40px; margin-left: 250px;">
+    	<img class="info" style="height:40px; margin-left: 250px" src="images/brencorp.png" alt="Brencorp"> 
+    </div>
+    <div class="bottom-bar">
+    	<p></p>
+    </div>
+</body>
+</html>

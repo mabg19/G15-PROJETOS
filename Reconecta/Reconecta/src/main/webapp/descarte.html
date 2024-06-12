@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Reconecta - Recoleta</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Candal">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script>
+        // Função para recuperar a variável do localStorage e exibir
+        function mostrarMoedas() {
+            let moedas = localStorage.getItem('moedas');
+            document.getElementById('moedas').innerText = moedas;
+        }
+
+        // Chama a função para mostrar as moedas ao carregar a página
+        window.onload = mostrarMoedas;
+    </script>
+</head>
+<body>
+	<div class="top-bar">
+       <a href="index.html" class="logo">
+       	<img id="miniLogo" src="images/miniLogo.png" alt="Mini Logo" class="logo">
+       </a>
+       <nav>
+           <ul>
+               <li><a href="recoleta.html">Recoleta</a></li>
+               <li><a href="descarte.html">Descarte consciente</a></li>
+               <li><a href="onde.html">Onde descartar</a></li>
+           </ul>
+       </nav>    
+		<div class="greeting" onmouseover="mostrarPopup()" onmouseout="esconderPopup()">
+	    <a href="usuario.html" style="color: white">Olá, Usuário</a>
+	    <div class="popup" id="popupMoeda">
+	        <span style="font-size: 12px;" class="popup-close" onclick="esconderPopup()">&times;</span>
+	        <a href="recoin.html" style="color: #33A721;">Moeda: <span id="moedas">0</span> Recoins</a>
+	    </div>
+		</div>
+		
+		<script>
+	    function mostrarPopup() {
+	        document.getElementById('popupMoeda').style.display = 'block';
+	    }
+	
+	    function esconderPopup() {
+	        document.getElementById('popupMoeda').style.display = 'none';
+	    }
+	</script>
+    </div>
+    
+    
+    <div style="margin-top: 90px; display: flex; flex-direction: row">
+    		<a href="index.html" style="font-size:15px; margin: 15px; color: black;" > <- Voltar</a>
+   	</div>
+    <div class="textoTitulo">
+        <p class="p1" style= "font-size:44px" >DESCARTE CONSCIENTE</p>
+        <img src="images/pc.png" style="width:80px " alt="Computador">
+    </div>
+    
+    <p class="p1" style= "font-size:28px; color: #104E06; margin-left: 90px; margin-top: 50px" >Tempos úteis dos dispositivos</p>
+    <div class="contentLeft">
+	    <p style="font-size: 28px;"><</p>
+	   	<img src="images/box.jpg" style="width:350px; margin-left:20px; margin-right:20px; border: none; border-radius: 100px;  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);" alt="Mulher feliz caixa">
+	   	<p style="font-size: 28px;">></p>
+	    <div class="descricao">
+	       	<p style="font-size:18px; margin-left: 40px; margin-bottom:20px">O tempo útil dos dispositivos eletrônicos refere-se ao período<br>
+	       	durante o qual esses aparelhos funcionam de forma eficiente e<br>
+	       	confiável, antes de se tornarem obsoletos ou apresentarem falhas<br>
+	       	significativas. Este tempo varia conforme o tipo de dispositivo,<br>
+	       	sua qualidade de fabricação, frequência de uso e os cuidados de<br>
+	       	manutenção recebidos. Entender o tempo útil é essencial para otimizar<br>
+	       	o custo-benefício e planejar a substituição adequada, garantindo que<br>
+	       	você aproveite ao máximo sua tecnologia, minimizando desperdícios e<br>
+	       	promovendo um uso mais sustentável dos recursos.
+	       	</p>
+	       	<div>
+		    	<a class="botao-sabermais" href="justifiqueRota1.html" style="font-size: 16px; margin-left: 230px;">Saiba mais</a>
+			</div>
+	 	</div>
+     </div>
+     <p class="p1" style= "font-size:28px; color: #104E06; margin-left: 90px; margin-top: 120px" >Consequências do descarte</p>
+     <div class="contentLeft">
+	    <p style="font-size: 28px;"><</p>
+	   	<img src="images/Techs.png" style="width:350px; margin-left:20px; margin-right:20px; border: none; border-radius: 100px;  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);" alt="Techs">
+	   	<p style="font-size: 28px;">></p>
+	    <div class="descricao">
+	       	<p style="font-size:18px; margin-left: 40px; margin-bottom:20px">
+	       	O descarte inadequado de eletrônicos tem consequências<br>
+	       	ambientais e sociais significativas. Esses dispositivos contêm<br>
+	       	metais pesados e substâncias tóxicas que podem contaminar solo<br>
+	       	e água, prejudicando ecossistemas e a saúde humana. Além disso<br>
+	       	a falta de reciclagem adequada desperdiça recursos valiosos,<br>
+	       	como metais raros, que poderiam ser reutilizados na fabricação<br>
+	       	de novos produtos. A gestão irresponsável do lixo eletrônico<br>
+	       	também contribui para o aumento de resíduos em aterros sanitários,<br>
+	       	exacerbando problemas de poluição. Portanto, é crucial promover a<br>
+	       	reciclagem e o descarte consciente para mitigar esses impactos e<br>
+	       	fomentar a sustentabilidade.
+	       	</p>
+	 	</div>
+     </div>
+     <p class="p1" style= "font-size:28px; color: #104E06; margin-left: 90px; margin-top: 120px" >A importância da logística reversa</p>
+     <div class="contentLeft">
+	    <p style="font-size: 28px;"><</p>
+	   	<img src="images/ecoCircle.jpg" style="width:350px; margin-left:20px; margin-right:20px; border: none; border-radius: 100px;  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);" alt="Círculo ecológico">
+	   	<p style="font-size: 28px;">></p>
+	    <div class="descricao">
+	       	<p style="font-size:18px; margin-left: 40px; margin-bottom:20px">
+	       	A logística reversa é essencial para a gestão sustentável<br>
+	       	de produtos após o consumo. Ela permite a reutilização e<br>
+	       	reciclagem de materiais, reduzindo a quantidade de resíduos<br>
+	       	em aterros e a extração de novos recursos. Além de minimizar o<br>
+	       	impacto ambiental, essa prática promove a responsabilidade<br>
+	       	compartilhada entre todos os envolvidos na cadeia produtiva,<br>
+	       	contribuindo para uma economia circular e um futuro mais sustentável.
+	       	</p>
+	 	</div>
+     </div>
+     <p class="p1" style= "font-size:28px; color: #104E06; margin-left: 90px; margin-top: 120px" >Educação e conscientização pública</p>
+     <div class="contentLeft" style="margin-bottom:80px">
+	    <p style="font-size: 28px;"><</p>
+	   	<img src="images/conscientizacao.jpg" style="width:350px; margin-left:20px; margin-right:20px; border: none; border-radius: 100px; box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);" alt="Crianças">
+	   	<p style="font-size: 28px;">></p>
+	    <div class="descricao">
+	       	<p style="font-size:18px; margin-left: 40px; margin-bottom:20px">
+	       	A educação e a conscientização pública são fundamentais para<br>
+	       	promover práticas sustentáveis e responsáveis. Informar a população<br>
+	       	sobre os impactos ambientais e sociais de suas ações, como o<br>
+	       	descarte inadequado de resíduos e o consumo excessivo, é crucial<br>
+	       	para incentivar mudanças de comportamento. Campanhas educativas e<br>
+	       	programas de conscientização ajudam a desenvolver uma sociedade<br>
+	       	mais informada e comprometida com a preservação do meio ambiente.<br>
+	       	Ao aumentar o conhecimento e a responsabilidade individual e coletiva,<br>
+	       	podemos promover uma cultura de sustentabilidade e garantir um futuro<br>
+	       	mais saudável para todos.
+	       	</p>
+	 	</div>
+     </div>   
+     
+    <div class="bottom-bar">
+    	<p class="p1" style="font-size: 20px; margin-top: 20px; margin-left: 15px" >Contato</p>
+    </div>
+    <div class="bottom-bar" >
+    	<img src="images/email.png" style= "width:20px; height: 20px; margin-left: 50px; margin-right: 10px;" alt="Email"> 
+    	<p style="font-size: 14px; margin-top: 0px;" >contato@reconecta.com.br</p>
+    	<img style= "width:20px; height: 20px; margin-left: 50px;  margin-right: 10px;" src="images/telefone.png"  alt="Telefone"> 
+    	<p style="margin-top: 0px; font-size: 14px" >+55 81 99987-2721</p>
+    	
+    	<img src="images/LogoClara.png" alt="Logo" style="width:180px; height:40px; margin-left: 250px;">
+    	<img class="info" style="height:40px; margin-left: 250px" src="images/brencorp.png" alt="Brencorp"> 
+    </div>
+    <div class="bottom-bar">
+    	<p></p>
+    </div>
+</body>
+</html>

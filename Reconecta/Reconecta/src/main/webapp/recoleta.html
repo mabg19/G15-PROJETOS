@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Reconecta - Recoleta</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Candal">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script>
+    function mostrarMoedas() {
+        let moedas = localStorage.getItem('moedas');
+        document.getElementById('moedas').innerText = moedas;
+    }
+
+    // Chama a função para mostrar as moedas ao carregar a página
+    window.onload = mostrarMoedas;
+    </script>
+</head>
+<body>
+	<div class="top-bar">
+       <a href="index.html" class="logo">
+       	<img id="miniLogo" src="images/miniLogo.png" alt="Mini Logo" class="logo">
+       </a>
+       <nav>
+           <ul>
+               <li><a href="recoleta.html">Recoleta</a></li>
+               <li><a href="descarte.html">Descarte consciente</a></li>
+               <li><a href="onde.html">Onde descartar</a></li>
+           </ul>
+       </nav>    
+		<div class="greeting" onmouseover="mostrarPopup()" onmouseout="esconderPopup()">
+	    <a href="usuario.html" style="color: white">Olá, Usuário</a>
+	    <div class="popup" id="popupMoeda">
+	        <span style="font-size: 12px;" class="popup-close" onclick="esconderPopup()">&times;</span>
+	        <a href="recoin.html" style="color: #33A721;">Moeda: <span id="moedas">0</span> Recoins</a>
+	    </div>
+		</div>
+		
+		<script>
+	    function mostrarPopup() {
+	        document.getElementById('popupMoeda').style.display = 'block';
+	    }
+	
+	    function esconderPopup() {
+	        document.getElementById('popupMoeda').style.display = 'none';
+	    }
+	</script>
+    </div>
+    
+    
+    <div style="margin-top: 90px; display: flex; flex-direction: row">
+    		<a href="index.html" style="font-size:15px; margin: 15px; color: black;" > <- Voltar</a>
+   	</div>
+    <div class="textoTitulo">
+        <p class="p1" style= "font-size:44px" >RECOLETA</p>
+        <img src="images/caminhao.png" style="width:100px; margin-left: 20px" alt="Caminhao">
+    </div>
+    <div class="content" style="margin-top: 5px;">
+        <p class="descricao" style="font-size:18px;">
+        A recoin é uma moeda de troca criada para incentivar a população a utilizar o processo de logística reversa<br>
+        de eletrônicos. Ao realizar o descarte correto de dispositivos eletrônicos, o usuário recebe recoins.<br>
+        Essas moedas podem ser acumuladas e trocadas por novos dispositivos nas lojas de eletrônicos parceiras do<br>
+        programa, incentivando assim a participação ativa no ciclo de reciclagem e contribuindo para a sustentabilidade ambiental. 
+        </p>
+     </div>
+     <p class="p1" style= "font-size:44px; color: #104E06; margin-left: 200px;" >Como funciona?</p>
+     <div class="content" style="margin-top: 5px;">
+    	<img src="images/caminhaoReconecta.png" style="width:600px " alt="Caminhao Reconecta">
+        <p class="descricao" style="font-size:18px;">
+        A Recoleta da Brencorp opera através de rotas<br>
+        específicas, garantindo uma cobertura abrangente<br>
+        e eficiente. Cada rota é cuidadosamente planejada e<br>
+        programada, com horários predefinidos para coleta.<br>
+        Isso significa que, independentemente de onde você<br>
+        esteja localizado, haverá uma rota próxima e um horário<br>
+        conveniente para você.
+        </p>
+     </div>
+     <p class="p1" style= "font-size:44px; color: #104E06; margin-top: 100px; margin-left: 200px;" >Como utilizar?</p>
+     <div class="content">
+        <p class="descricao" style="font-size:18px;">
+        Para começar a utilizar o serviço Recoleta, é simples. Basta realizar um rápido cadastro em nosso site ou<br>
+        aplicativo, fornecendo algumas informações básicas. Em seguida, você poderá indicar o dia em que deseja<br>
+        realizar o descarte dos materiais. Uma vez cadastrado, você receberá informações detalhadas sobre as rotas<br>
+        disponíveis e os horários de coleta correspondentes à sua região.
+        </p>
+    </div>
+    
+    <div class="content" style="margin-top: 0;">
+    	<img src="images/Mapa.png" style="height: 450px;margin-right: 100px" alt="Mapa">
+	    <div class="container-botoes"> 
+		     <div class="botao-estilizado" style="margin-top: 80px; height: 50px; width: 300px; background-color: #33A721;">  
+		     	<a href="rota1.html">
+		     		<img src="images/pinRoxo.png" style="margin-left: 15px; width:25px " alt="Pin Roxo">
+		     	</a>
+			    <p class="p1" style="font-size: 15px; color: white; margin-left: 15px; margin-right: 10px;">Rota 1</p>
+			    <p style="font-size: 12px">Encruzilhada, Madalena...</p>
+			</div>
+			<div class="botao-estilizado" style="height: 50px; width: 300px;background-color: #33A721;">
+		     	<img src="images/pinAzulM.png" style="margin-left: 15px; width:25px " alt="Pin Azul">
+			    <p class="p1" style="font-size: 15px; color: white; margin-left: 15px; margin-right: 10px;">Rota 2</p>
+			    <p style="font-size: 12px">Pina, Boa Viagem, Piedade...</p>
+			</div>
+			<div class="botao-estilizado" style="height: 50px; width: 300px; background-color: #33A721;">
+		     	<img src="images/pinAzul.png" style="margin-left: 15px; width:25px " alt="Pin Azul">
+			    <p class="p1" style="font-size: 15px; color: white; margin-left: 15px; margin-right: 10px;">Rota 3</p>
+			    <p style="font-size: 12px">Ibura, Areias, Ipsep...</p>
+			</div>
+			<div class="botao-estilizado" style="height: 50px; width: 300px; background-color: #33A721;">
+		     	<img src="images/pinVerde.png" style="margin-left: 15px; width:25px " alt="Pin Verde">
+			    <p class="p1" style="font-size: 15px; color: white; margin-left: 15px; margin-right: 10px;">Rota 4</p>
+			    <p style="font-size: 12px">Varzea, Cordeiro...</p>
+			</div>
+			<div class="botao-estilizado" style="height: 50px; width: 300px; background-color: #33A721;">
+		     	<img src="images/pinAmarelo.png" style="margin-left: 15px; width:25px " alt="Pin Amarelo">
+			    <p class="p1" style="font-size: 15px; color: white; margin-left: 15px; margin-right: 10px;">Rota 5</p>
+			    <p style="font-size: 12px">Casa Amarela, Iputinga...</p>
+			</div>
+		</div>
+    </div>
+
+     <p class="p1" style= "font-size:44px; color: #104E06;margin-left: 200px;" >Benefícios: </p>
+     <div class="topics">
+     	<p class="p1" style= "font-size:22px; color: #104E06;" >Conveniência: </p>
+        <p class="descricao" style="font-size:16px;">
+        <br>Não há mais necessidade de se preocupar com o transporte dos materiais para os pontos de coleta.<br>
+        A Recoleta traz o serviço até você, tornando o processo de reciclagem mais fácil do que nunca.<br><br>
+		</p>
+    </div>
+    <div class="topics">
+     	<p class="p1" style= "font-size:22px; color: #104E06;" >Sustentabilidade: </p>
+        <p class="descricao" style="font-size:16px;">
+        <br>Não há mais necessidade de se preocupar com o transporte dos materiais para os pontos de coleta.<br>
+        A Recoleta traz o serviço até você, tornando o processo de reciclagem mais fácil do que nunca.<br><br>
+		</p>
+    </div>
+    <div class="topics">
+     	<p class="p1" style= "font-size:22px; color: #104E06;" >Eficiência: </p>
+        <p class="descricao" style="font-size:16px;">
+        <br>Não há mais necessidade de se preocupar com o transporte dos materiais para os pontos de coleta.<br>
+        A Recoleta traz o serviço até você, tornando o processo de reciclagem mais fácil do que nunca.<br><br>
+		</p>
+    </div>
+    
+     
+     <div class="bottom-bar">
+    	<p class="p1" style="font-size: 20px; margin-top: 20px; margin-left: 15px" >Contato</p>
+    </div>
+    <div class="bottom-bar" >
+    	<img src="images/email.png" style= "width:20px; height: 20px; margin-left: 50px; margin-right: 10px;" alt="Email"> 
+    	<p style="font-size: 14px; margin-top: 0px;" >contato@reconecta.com.br</p>
+    	<img style= "width:20px; height: 20px; margin-left: 50px;  margin-right: 10px;" src="images/telefone.png"  alt="Telefone"> 
+    	<p style="margin-top: 0px; font-size: 14px" >+55 81 99987-2721</p>
+    	
+    	<img src="images/LogoClara.png" alt="Logo" style="width:180px; height:40px; margin-left: 250px;">
+    	<img class="info" style="height:40px; margin-left: 250px" src="images/brencorp.png" alt="Brencorp"> 
+    </div>
+    <div class="bottom-bar">
+    	<p></p>
+    </div>
+</body>
+</html>
