@@ -1,6 +1,6 @@
 # Reconecta
 
-Bem-vindo ao repositório do Projeto Reconecta! Este repositório contém as classes Java, arquivos HTML e CSS, esenciais para o desenvolvimento e manutenção do projeto.
+Bem-vindo ao repositório do Projeto Reconecta! Este repositório contém as classes Java, arquivos HTML e CSS, essenciais para o desenvolvimento e manutenção do projeto.
 
 ## Visão Geral
 
